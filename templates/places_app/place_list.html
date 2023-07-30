@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Places List</title>
+</head>
+<body>
+    <div id="map"></div>
+
+    <form id="search-form">
+        <input type="text" name="query" placeholder="Search for places">
+        <button type="submit">Search</button>
+    </form>
+
+    <ul id="place-list">
+        {% for place in places %}
+            <li>{{place.name}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
